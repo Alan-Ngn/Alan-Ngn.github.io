@@ -2049,7 +2049,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png"); */
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2127,10 +2127,12 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			height: 200px;
 		}
 
 			.image.fit img {
 				width: 100%;
+				height: 200px;
 			}
 
 		.image.avatar {
@@ -3218,4 +3220,14 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+
+	.skills-img img{
+		height: 40px
+	}
+
+	.skills-img {
+		display: flex;
+		flex-direction: row;
+		gap: 20px
 	}
