@@ -1,0 +1,78 @@
+.me-avatar {
+    position: absolute;
+    bottom: 80px;
+    left:350px;
+    transition: transform 1s;
+}
+
+.wizard {
+    width: 200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left:-10px;
+}
+.dragon {
+    width: 200px;
+    height:200px;
+    position: absolute;
+    top: 300px;
+    right:500px;
+}
+
+.knight {
+    width: 120px;
+    height:120px;
+    position: absolute;
+    bottom: 300px;
+    right:500px;
+    transform: scaleX(-1);
+}
+/* .dragon:hover {
+    border: 1px solid yellow;
+
+  } */
+
+
+  .talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: absolute;
+	width: 200px;
+	height: auto;
+	background-color: lightyellow;
+    left: 400px;
+    bottom:-20px
+}
+.round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+
+  }
+  .talktext{
+    padding: 1em;
+      text-align: left;
+    line-height: 1.5em;
+  }
+  .talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+  .tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 80px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+.hide{
+    display:none;
+}

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+/* body {
+  cursor: url('./cursor.png'), auto;
+} */
+
+.Background {
+  background-color: #302C2D;
+}
