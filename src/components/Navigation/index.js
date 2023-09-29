@@ -4,7 +4,7 @@ import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
     const [transform, setTransform] = useState({ x: 20, y: 0})
-    const [chatStart, setChatStart] = useState("talk-bubble tri-right left-in")
+    const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e) => {
         const newTransform = {
@@ -13,7 +13,7 @@ function Navigation(){
         };
         setTransform(newTransform);
         setTimeout(()=> {
-          setChatStart("talk-bubble tri-right left-in")
+          setStart("talk-bubble tri-right left-in")
         },1000)
       };
     const handleDragonMove = (e) => {
@@ -22,7 +22,7 @@ function Navigation(){
           y: -700,
         };
         setTransform(newTransform);
-        setChatStart("hide");
+        setStart("hide");
       };
 
       const handleWizardMove = (e) => {
@@ -31,7 +31,7 @@ function Navigation(){
           y: -300,
         };
         setTransform(newTransform);
-        setChatStart("hide");
+        setStart("hide");
       };
 
       const handleChestMove = (e) => {
@@ -40,7 +40,7 @@ function Navigation(){
           y: -820,
         };
         setTransform(newTransform);
-        setChatStart("hide");
+        setStart("hide");
       };
 
       const handleKnightMove = (e) => {
@@ -49,7 +49,7 @@ function Navigation(){
           y: -450,
         };
         setTransform(newTransform);
-        setChatStart("hide");
+        setStart("hide");
       };
       const handleScrollMove = (e) => {
         const newTransform = {
@@ -58,7 +58,7 @@ function Navigation(){
         };
 
         setTransform(newTransform);
-        setChatStart("hide");
+        setStart("hide");
 
 
       };
@@ -71,7 +71,7 @@ function Navigation(){
                     transform: `translate(${transform.x}px, ${transform.y}px)`
                 }}
             />
-            <div className={chatStart}>
+            <div className={start}>
               <div className="talktext">
 
               <p>

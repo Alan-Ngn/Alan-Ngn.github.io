@@ -49,8 +49,14 @@
   position: absolute;
   bottom: 400px;
   left:320px;
+  /* animation: bounce 5s linear infinite; */
   /* transform: scaleX(-1); */
 }
+
+.scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover {
+  cursor: pointer;
+}
+
 
   .talk-bubble {
 	margin: 40px;
