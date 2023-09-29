@@ -10,14 +10,15 @@
     height:200px;
     position: absolute;
     bottom: 300px;
-    left:-10px;
+    left:-15px;
 }
 .dragon {
     width: 200px;
     height:200px;
     position: absolute;
-    top: 300px;
-    left:400px;
+    top: 350px;
+    left:100px;
+    transform: scaleX(-1);
 }
 
 .knight {
@@ -35,12 +36,22 @@
 
   .chest {
     width: 150px;
-    height:100px;
+    height:120px;
     position: absolute;
-    top: 250px;
-    left:300px;
+    top: 255px;
+    left:290px;
     /* transform: scaleX(-1); */
 }
+
+.scroll {
+  width: 100px;
+  height:100px;
+  position: absolute;
+  bottom: 400px;
+  left:320px;
+  /* transform: scaleX(-1); */
+}
+
   .talk-bubble {
 	margin: 40px;
   display: inline-block;
