@@ -19,9 +19,10 @@ function OpenModalButton({
   return (
       <button className={`modal-button-${buttonClassName}`} onClick={onClick}>
           {/* {buttonText==='Delete' ? <i class="fa-solid fa-trash"></i> : buttonText==='Edit Channel' ? <i class="fa-solid fa-hammer"></i> : buttonText ==='Add channels' ? */}
-          <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/>
-          <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/>
-          <img  className='knight' src={process.env.PUBLIC_URL + '/knight.png'}/>
+
+          {/* <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/> */}
+
+
             <div className='button-text'>{buttonText}</div>
 
 

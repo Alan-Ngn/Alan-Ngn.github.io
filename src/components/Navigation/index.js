@@ -5,25 +5,41 @@ import React, { useState } from 'react';
 function Navigation(){
     const [transform, setTransform] = useState({ x: 20, y: 0})
 
-    const handlereset = (ev) => {
+    const handleStart = (e) => {
         const newTransform = {
           x: 20,
           y: 0,
         };
         setTransform(newTransform);
       };
-    const handleMouseMove = (ev) => {
+    const handleDragonMove = (e) => {
         const newTransform = {
-          x: 20,
-          y: -200,
+          x: 40,
+          y: -700,
         };
         setTransform(newTransform);
       };
 
-      const handleMouseMove1 = (ev) => {
+      const handleWizardMove = (e) => {
         const newTransform = {
           x: -240,
           y: -300,
+        };
+        setTransform(newTransform);
+      };
+
+      const handleChestMove = (e) => {
+        const newTransform = {
+          x: 0,
+          y: -850,
+        };
+        setTransform(newTransform);
+      };
+
+      const handleKnightMove = (e) => {
+        const newTransform = {
+          x: 10,
+          y: -450,
         };
         setTransform(newTransform);
       };
@@ -45,27 +61,28 @@ function Navigation(){
               </div>
             </div>
             <button
-                // onMouseMove={handleMouseMove}
-                onClick={handleMouseMove}
+                onClick={handleDragonMove}
             >
-                Click Me!
+                <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/>
+              Dragon
+            </button>
+            <button onClick={handleWizardMove}>
+              <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/>
+              Wizard
+            </button>
+            <button onClick={handleChestMove}>
+              <img  className='chest' src={process.env.PUBLIC_URL + '/chest.png'}/>
+              Chest
+            </button>
+            <button onClick={handleKnightMove}>
+              <img  className='knight' src={process.env.PUBLIC_URL + '/knight.png'}/>
+              Knight
             </button>
             <button
-                // onMouseMove={handleMouseMove}
-                onClick={handleMouseMove1}
+                onClick={handleStart}
             >
-                Click Me 2!
+                Start
             </button>
-
-            <button
-                // onMouseMove={handleMouseMove}
-                onClick={handlereset}
-            >
-                Reset!
-            </button>
-            {/* <img  className='wizard' src={process.env.PUBLIC_URL + '/wzzz.png'}/> */}
-            {/* <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/> */}
-
             <OpenModalButton
               buttonText='testf'
               modalComponent={<ProjectModal/>}

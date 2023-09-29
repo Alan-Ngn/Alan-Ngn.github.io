@@ -33,7 +33,14 @@
 
   } */
 
-
+  .chest {
+    width: 150px;
+    height:100px;
+    position: absolute;
+    top: 250px;
+    left:300px;
+    /* transform: scaleX(-1); */
+}
   .talk-bubble {
 	margin: 40px;
   display: inline-block;
