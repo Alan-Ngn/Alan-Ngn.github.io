@@ -1,11 +1,27 @@
+.profile-pic{
+    position: relative;
+    z-index:0;
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    display:flex;
+    justify-content: center;
+}
+
 .frame {
     z-index:1;
     position:absolute;
-    height:300px
+    height:20vh;
+   /* right: 300px; */
+    /* right: auto; */
+    object-fit: contain;
+
 }
 .profile {
-    z-index: 2;
+    z-index: 1;
     position:absolute;
-    width: 300px;
-    height:250px
+    width:130px;
+    height:170px;
+    /* left:40px; */
+    top: 37px
 }

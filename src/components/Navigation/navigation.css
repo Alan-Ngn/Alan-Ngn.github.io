@@ -4,41 +4,46 @@
 }
 .me-avatar {
     position: absolute;
-    bottom: 80px;
-    left:350px;
+    bottom: 7%;
+    left:48%;
     transition: transform 1s;
     z-index: 10;
+    width: 6%
 }
 .landscape {
   /* width: 100vh; */
   height: 100vh;
   position: absolute;
   /* z-index: 1; */
+  width: 100%;
+  /* object-fit: contain; */
 }
 
 .wizard {
-    width: 200px;
+    width: 25%;
     height:200px;
     position: absolute;
     bottom: 300px;
-    left:-15px;
+    left:5%;
     /* z-index: 2; */
 }
 .dragon {
-    width: 200px;
+    width: 25%;
     height:200px;
     position: absolute;
     top: 350px;
-    left:100px;
+    left:10%;
     transform: scaleX(-1);
 }
 
 .knight {
-    width: 120px;
+    /* width: 120px; */
+    width:20%;
     height:120px;
     position: absolute;
     bottom: 500px;
-    left:430px;
+    right:25%;
+    /* left:430px; */
     transform: scaleX(-1);
 }
 /* .dragon:hover {
@@ -47,20 +52,20 @@
   } */
 
   .chest {
-    width: 150px;
+    width: 20%;
     height:120px;
     position: absolute;
     top: 255px;
-    left:290px;
+    left:40%;
     /* transform: scaleX(-1); */
 }
 
 .scroll {
-  width: 100px;
+  width: 20%;
   height:100px;
   position: absolute;
   bottom: 400px;
-  left:320px;
+  left:40%;
   /* animation: bounce 5s linear infinite; */
   /* transform: scaleX(-1); */
 }
@@ -78,7 +83,8 @@
 	height: auto;
 	background-color: lightyellow;
     left: 400px;
-    bottom:-20px
+    bottom:-20px;
+    z-index: 1;
 }
 .round{
     border-radius: 30px;

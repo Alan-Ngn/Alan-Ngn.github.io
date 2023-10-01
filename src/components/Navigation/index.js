@@ -53,8 +53,8 @@ function Navigation(){
       };
       const handleScrollMove = (e) => {
         const newTransform = {
-          x: -50,
-          y: -325,
+          x: -150,
+          y: -700,
         };
 
         setTransform(newTransform);
@@ -73,7 +73,7 @@ function Navigation(){
             <div className="testmap">
               <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
                   style={{
-                      transform: `translate(${transform.x}px, ${transform.y}px)`
+                      transform: `translate(${transform.x}%, ${transform.y}%)`
                   }}
               />
               <div className={start}>
@@ -119,6 +119,10 @@ function Navigation(){
 
 
 
+            <OpenModalButton
+              buttonText='testf'
+              modalComponent={<ProjectModal/>}
+            ></OpenModalButton>
 
             </div>
 
@@ -128,10 +132,6 @@ function Navigation(){
 
 
 
-            <OpenModalButton
-              buttonText='testf'
-              modalComponent={<ProjectModal/>}
-            ></OpenModalButton>
         </>
     )
 }

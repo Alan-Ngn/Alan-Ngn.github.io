@@ -35,7 +35,7 @@ function App() {
           className='Map'>
         </div> */}
         <Navigation></Navigation>
-        {/* <Content></Content> */}
+        <Content></Content>
     </div>
   );
 }
