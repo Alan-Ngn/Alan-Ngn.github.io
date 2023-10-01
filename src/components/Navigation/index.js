@@ -66,46 +66,68 @@ function Navigation(){
       // const chatClassName = "talk-bubble tri-right left-in" + (transform.x !== 20 || transform.y !== 0 ? " hide" : "")
     return (
         <>
-            <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
-                style={{
-                    transform: `translate(${transform.x}px, ${transform.y}px)`
-                }}
-            />
-            <div className={start}>
-              <div className="talktext">
 
-              <p>
-                Yoohooo! My name is Alan Nguyen and I am a Software Engineer! Take this journey to learn more about what I can do!
-              </p>
+
+
+
+            <div className="testmap">
+              <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
+                  style={{
+                      transform: `translate(${transform.x}px, ${transform.y}px)`
+                  }}
+              />
+              <div className={start}>
+                <div className="talktext">
+                  <p>
+                    Yoohooo! My name is Alan Nguyen and I am a Software Engineer! Take this journey to learn more about what I can do!
+                  </p>
+                </div>
               </div>
-            </div>
-            <button
-                onClick={handleDragonMove}
-            >
-                <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/>
-              Dragon
-            </button>
-            <button onClick={handleWizardMove}>
-              <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/>
-              Wizard
-            </button>
-            <button onClick={handleChestMove}>
-              <img  className='chest' src={process.env.PUBLIC_URL + '/chest.png'}/>
-              Chest
-            </button>
-            <button onClick={handleKnightMove}>
+
+              <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
+
+              <button onClick={handleWizardMove}>
+                <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/>
+                Wizard
+              </button>
+
+              <button onClick={handleDragonMove}>
+                  <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/>
+                Dragon
+              </button>
+
+              <button onClick={handleChestMove}>
+                <img  className='chest' src={process.env.PUBLIC_URL + '/chest.png'}/>
+                Chest
+              </button>
+
+              <button onClick={handleKnightMove}>
               <img  className='knight' src={process.env.PUBLIC_URL + '/knight.png'}/>
               Knight
             </button>
+
             <button onClick={handleScrollMove}>
               <img  className='scroll' src={process.env.PUBLIC_URL + '/scroll.png'}/>
               Scroll
             </button>
+
             <button
                 onClick={handleStart}
             >
                 Start
             </button>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
             <OpenModalButton
               buttonText='testf'
               modalComponent={<ProjectModal/>}

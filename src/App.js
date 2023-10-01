@@ -23,7 +23,7 @@ function App() {
     //   </header>
     // </div>
     <div className='Background'>
-
+{/*
         <div style={{
           backgroundImage: `url(${process.env.PUBLIC_URL + '/landscape.jpg'})`,
           backgroundSize: 'contain',
@@ -33,9 +33,9 @@ function App() {
           backgroundPosition: 'center',
           }}
           className='Map'>
-          <Navigation></Navigation>
-        </div>
-        <Content></Content>
+        </div> */}
+        <Navigation></Navigation>
+        {/* <Content></Content> */}
     </div>
   );
 }

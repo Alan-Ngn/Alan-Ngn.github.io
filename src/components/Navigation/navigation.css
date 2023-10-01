@@ -1,8 +1,19 @@
+.testmap{
+  position: relative;
+  height: 100vh;
+}
 .me-avatar {
     position: absolute;
     bottom: 80px;
     left:350px;
     transition: transform 1s;
+    z-index: 10;
+}
+.landscape {
+  /* width: 100vh; */
+  height: 100vh;
+  position: absolute;
+  /* z-index: 1; */
 }
 
 .wizard {
@@ -11,6 +22,7 @@
     position: absolute;
     bottom: 300px;
     left:-15px;
+    /* z-index: 2; */
 }
 .dragon {
     width: 200px;
