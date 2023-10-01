@@ -2,6 +2,7 @@
 import './App.css';
 import React from "react";
 import Navigation from './components/Navigation';
+import Content from './components/Content';
 
 function App() {
   return (
@@ -25,20 +26,16 @@ function App() {
 
         <div style={{
           backgroundImage: `url(${process.env.PUBLIC_URL + '/landscape.jpg'})`,
-          // backgroundPosition: 'center',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          width: '100vw',
-          height: '100vh'
-          // height: 600
-        // height:600,width:600
-          // width:'250px'
-
-        }}
-        className='Test'>
-
-        <Navigation></Navigation>
+          // width: '100vw',
+          height: '100vh',
+          backgroundPosition: 'center',
+          }}
+          className='Map'>
+          <Navigation></Navigation>
         </div>
+        <Content></Content>
     </div>
   );
 }

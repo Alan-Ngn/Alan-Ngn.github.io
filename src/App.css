@@ -42,4 +42,11 @@
 
 .Background {
   background-color: #302C2D;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .content  */
+.Map{
+  position: relative
 }
