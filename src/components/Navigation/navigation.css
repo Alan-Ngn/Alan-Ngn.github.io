@@ -85,8 +85,9 @@
 	width: 200px;
 	height: auto;
 	background-color: lightyellow;
-  left: 670px;
   top:1080px;
+  left: 52%;
+  /* left: 880px; */
   z-index: 1;
 }
 .round{
