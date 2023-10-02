@@ -10,21 +10,23 @@ function OpenChestModal({
   buttonClassName
 }) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform } = useTransform()
+  const { transform, setTransform, setStart } = useTransform()
 
   const onClick = () => {
     const newTransform = {
       x: 0,
-      y: 330,
+      y: 360,
     };
     setTransform(newTransform);
 
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === 10 && transform.y ===50){
         setModalContent(modalComponent);
+        setStart("hide");
     } else {
         setTimeout(()=> {
             setModalContent(modalComponent);
+            setStart("hide");
           },1000)
     }
 

@@ -10,7 +10,7 @@ function OpenScrollModal({
   buttonClassName
 }) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform } = useTransform()
+  const { transform, setTransform, setStart } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -22,9 +22,11 @@ function OpenScrollModal({
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === 0 && transform.y ===900){
         setModalContent(modalComponent);
+        setStart("hide");
     } else {
         setTimeout(()=> {
             setModalContent(modalComponent);
+            setStart("hide");
           },1200)
     }
 

@@ -13,13 +13,13 @@ import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
     // const [transform, setTransform] = useState({ x: 20, y: 0})
-    const {transform, setTransform} = useTransform()
-    const [start, setStart] = useState("talk-bubble tri-right left-in")
+    const {transform, setTransform, start, setStart} = useTransform()
+    // const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e) => {
         const newTransform = {
           x: 20,
-          y: 0,
+          y: 1180,
         };
         setTransform(newTransform);
         setTimeout(()=> {
@@ -123,6 +123,7 @@ function Navigation(){
 
             <button
                 onClick={handleStart}
+                className="start"
             >
                 Start
             </button>
@@ -130,30 +131,35 @@ function Navigation(){
 
             <OpenChestModal
               buttonText='Chest'
+              buttonClassName='chest'
               modalComponent={<ChestModal/>}
             >
             </OpenChestModal>
 
             <OpenDragonModal
               buttonText='Dragon'
+              buttonClassName='dragon'
               modalComponent={<DragonModal/>}
             >
             </OpenDragonModal>
 
             <OpenKnightModal
               buttonText='Knight'
+              buttonClassName='knight'
               modalComponent={<KnightModal/>}
             >
             </OpenKnightModal>
 
             <OpenWizardModal
               buttonText='Wizard'
+              buttonClassName='wizard'
               modalComponent={<WizardModal/>}
             >
             </OpenWizardModal>
 
             <OpenScrollModal
               buttonText='Scroll'
+              buttonClassName='scroll'
               modalComponent={<ScrollModal/>}
             >
             </OpenScrollModal>

@@ -1,3 +1,4 @@
+import "./scrollModal.css";
 const ScrollModal = () => {
     return (
         <div>

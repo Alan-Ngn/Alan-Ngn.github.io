@@ -85,9 +85,9 @@
 	width: 200px;
 	height: auto;
 	background-color: lightyellow;
-    left: 400px;
-    bottom:-20px;
-    z-index: 1;
+  left: 670px;
+  top:1080px;
+  z-index: 1;
 }
 .round{
     border-radius: 30px;
@@ -120,4 +120,9 @@
 
 .hide{
     display:none;
+}
+
+.modal-button-wizard, .modal-button-knight, .modal-button-dragon, .modal-button-chest, .modal-button-scroll, .start {
+  height:50px;
+
 }
