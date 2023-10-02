@@ -42,11 +42,22 @@
 
 .Background {
   background-color: #302C2D;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
 }
 
 /* .content  */
 .Map{
+  /* display:flex;
+  justify-content: center; */
   position: relative
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+
 }

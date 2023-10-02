@@ -1,7 +1,8 @@
 import React from 'react';
 import { useModal } from '../../context/modal';
+import { useTransform } from '../../context/transform';
 // import './OpenModalButton.css'
-function OpenModalButton({
+function OpenChestModal({
   modalComponent, // component to render inside the modal
   buttonText, // text of the button that opens the modal
   onButtonClick, // optional: callback function that will be called once the button that opens the modal is clicked
@@ -9,26 +10,34 @@ function OpenModalButton({
   buttonClassName
 }) {
   const { setModalContent, setOnModalClose } = useModal();
+  const { transform, setTransform } = useTransform()
 
   const onClick = () => {
+    const newTransform = {
+      x: 0,
+      y: 330,
+    };
+    setTransform(newTransform);
+
     if (onModalClose) setOnModalClose(onModalClose);
-    setModalContent(modalComponent);
+    if (transform.x === 10 && transform.y ===50){
+        setModalContent(modalComponent);
+    } else {
+        setTimeout(()=> {
+            setModalContent(modalComponent);
+          },1000)
+    }
+
     if (onButtonClick) onButtonClick();
   };
 
   return (
       <button className={`modal-button-${buttonClassName}`} onClick={onClick}>
-          {/* {buttonText==='Delete' ? <i class="fa-solid fa-trash"></i> : buttonText==='Edit Channel' ? <i class="fa-solid fa-hammer"></i> : buttonText ==='Add channels' ? */}
-
-          {/* <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/> */}
-
-
-            <div className='button-text'>{buttonText}</div>
-
-
+        <img className='chest' src={process.env.PUBLIC_URL + '/chest.png'}/>
+        <div className='button-text'>{buttonText}</div>
       </button>
 
   );
 }
 
-export default OpenModalButton;
+export default OpenChestModal;

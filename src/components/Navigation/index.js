@@ -1,9 +1,19 @@
-import OpenModalButton from "../OpenModal";
-import ProjectModal from "../ProjectModal";
+import { useTransform } from "../../context/transform";
+import ChestModal from "../ChestModal";
+import OpenChestModal from "../ChestModal/chestButton";
+import DragonModal from "../DragonModal";
+import OpenDragonModal from "../DragonModal/dragonButton";
+import KnightModal from "../KnightModal";
+import OpenKnightModal from "../KnightModal/knightButton";
+import ScrollModal from "../ScrollModal";
+import OpenScrollModal from "../ScrollModal/ScrollButton";
+import WizardModal from "../WizardModal";
+import OpenWizardModal from "../WizardModal/WizardButton";
 import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
-    const [transform, setTransform] = useState({ x: 20, y: 0})
+    // const [transform, setTransform] = useState({ x: 20, y: 0})
+    const {transform, setTransform} = useTransform()
     const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e) => {
@@ -53,8 +63,8 @@ function Navigation(){
       };
       const handleScrollMove = (e) => {
         const newTransform = {
-          x: -150,
-          y: -700,
+          x: 10,
+          y: 10,
         };
 
         setTransform(newTransform);
@@ -70,12 +80,7 @@ function Navigation(){
 
 
 
-            <div className="testmap">
-              <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
-                  style={{
-                      transform: `translate(${transform.x}%, ${transform.y}%)`
-                  }}
-              />
+
               <div className={start}>
                 <div className="talktext">
                   <p>
@@ -85,12 +90,17 @@ function Navigation(){
               </div>
 
               <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
-
-              <button onClick={handleWizardMove}>
+              <div className="testmap">
+              <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
+                  style={{
+                      transform: `translate(${transform.x}px, ${transform.y}px)`
+                  }}
+              />
+              {/* <button onClick={handleWizardMove}>
                 <img  className='wizard' src={process.env.PUBLIC_URL + '/wizard.png'}/>
                 Wizard
-              </button>
-
+              </button> */}
+{/*
               <button onClick={handleDragonMove}>
                   <img  className='dragon' src={process.env.PUBLIC_URL + '/dragon.png'}/>
                 Dragon
@@ -104,12 +114,12 @@ function Navigation(){
               <button onClick={handleKnightMove}>
               <img  className='knight' src={process.env.PUBLIC_URL + '/knight.png'}/>
               Knight
-            </button>
+            </button> */}
 
-            <button onClick={handleScrollMove}>
+            {/* <button onClick={handleScrollMove}>
               <img  className='scroll' src={process.env.PUBLIC_URL + '/scroll.png'}/>
               Scroll
-            </button>
+            </button> */}
 
             <button
                 onClick={handleStart}
@@ -118,11 +128,35 @@ function Navigation(){
             </button>
 
 
+            <OpenChestModal
+              buttonText='Chest'
+              modalComponent={<ChestModal/>}
+            >
+            </OpenChestModal>
 
-            <OpenModalButton
-              buttonText='testf'
-              modalComponent={<ProjectModal/>}
-            ></OpenModalButton>
+            <OpenDragonModal
+              buttonText='Dragon'
+              modalComponent={<DragonModal/>}
+            >
+            </OpenDragonModal>
+
+            <OpenKnightModal
+              buttonText='Knight'
+              modalComponent={<KnightModal/>}
+            >
+            </OpenKnightModal>
+
+            <OpenWizardModal
+              buttonText='Wizard'
+              modalComponent={<WizardModal/>}
+            >
+            </OpenWizardModal>
+
+            <OpenScrollModal
+              buttonText='Scroll'
+              modalComponent={<ScrollModal/>}
+            >
+            </OpenScrollModal>
 
             </div>
 
