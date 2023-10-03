@@ -130,35 +130,35 @@ function Navigation(){
 
 
             <OpenChestModal
-              buttonText='Chest'
+              buttonText='Contact'
               buttonClassName='chest'
               modalComponent={<ChestModal/>}
             >
             </OpenChestModal>
 
             <OpenDragonModal
-              buttonText='Dragon'
+              buttonText='EarthBnB'
               buttonClassName='dragon'
               modalComponent={<DragonModal/>}
             >
             </OpenDragonModal>
 
             <OpenKnightModal
-              buttonText='Knight'
+              buttonText='Mango Music'
               buttonClassName='knight'
               modalComponent={<KnightModal/>}
             >
             </OpenKnightModal>
 
             <OpenWizardModal
-              buttonText='Wizard'
+              buttonText='Gibberish Project'
               buttonClassName='wizard'
               modalComponent={<WizardModal/>}
             >
             </OpenWizardModal>
 
             <OpenScrollModal
-              buttonText='Scroll'
+              buttonText='About Me'
               buttonClassName='scroll'
               modalComponent={<ScrollModal/>}
             >

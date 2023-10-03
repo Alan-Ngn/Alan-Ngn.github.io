@@ -27,27 +27,42 @@
   width: 200px;
   height:200px;
   position: absolute;
-  top:790px;
-  left: -200px;
+  top:-110px;
+  left: 60px;
   /* left:-15px; */
     /* z-index: 2; */
 }
+.modal-button-wizard {
+  position: absolute;
+  top: 900px;
+  left: -400px;
+}
+
 .dragon {
   width: 200px;
   height:200px;
   position: absolute;
-  top: 350px;
-  left:-90px;
+  top: -140px;
+  left:180px;
   transform: scaleX(-1);
 }
-
+.modal-button-dragon {
+  position: absolute;
+  top: 470px;
+  left:-400px;
+}
 .knight {
   width: 120px;
   height:120px;
   position: absolute;
-  top: 583px;
-  left:170px;
+  top: -70px;
+  left:-350px;
   transform: scaleX(-1);
+}
+.modal-button-knight {
+  position: absolute;
+  top: 650px;
+  left:380px;
 }
 /* .dragon:hover {
     border: 1px solid yellow;
@@ -58,21 +73,31 @@
   width: 150px;
   height:120px;
   position: absolute;
-  top: 255px;
-  left:80px;
+  top: 50px;
+  left:-50px;
   /* transform: scaleX(-1); */
+}
+
+.modal-button-chest {
+  position: absolute;
+  top: 195px;
+  left:-7px;
 }
 
 .scroll {
   width: 100px;
   height:100px;
   position: absolute;
-  top: 810px;
-  left:115px;
+  top: 40px;
+  left:-25px;
   /* animation: bounce 5s linear infinite; */
   /* transform: scaleX(-1); */
 }
-
+.modal-button-scroll {
+  position: absolute;
+  top: 770px;
+  left:0px;
+}
 .scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover {
   cursor: pointer;
 }
@@ -125,5 +150,6 @@
 
 .modal-button-wizard, .modal-button-knight, .modal-button-dragon, .modal-button-chest, .modal-button-scroll, .start {
   height:50px;
+
 
 }
