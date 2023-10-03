@@ -2,6 +2,15 @@ import "./scrollModal.css";
 const ScrollModal = () => {
     return (
         <div>
+            <div className="profile-pic">
+                <img  className='frame' src={process.env.PUBLIC_URL + '/frame.png'}/>
+                <img  className='profile' src={process.env.PUBLIC_URL + '/profile.png'}/>
+            </div>
+            <div>
+                <p>
+                Hello! My name is Alan Nguyen and I'm a software engineer with an undergraduate degree in mathematics and work experience in data analytics
+                </p>
+            </div>
             <div>Skills</div>
             <div class="skills-img">
 
