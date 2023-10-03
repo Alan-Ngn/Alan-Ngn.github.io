@@ -8,8 +8,33 @@ const ScrollModal = () => {
             </div>
             <div>
                 <p>
-                Hello! My name is Alan Nguyen and I'm a software engineer with an undergraduate degree in mathematics and work experience in data analytics
+                My name is Alan Nguyen and I'm a software engineer with an undergraduate degree in mathematics and 4+ years of work experience in data analytics.
                 </p>
+                {/* <p>
+
+                As a data analyst, I've spent the past few years dissecting datasets, deriving insights, and building data-driven solutions that have provided valuable information to decision-makers. During this time, I discovered my passion for coding and building software applications.
+                </p>
+                <p>
+
+My journey into software engineering started with self-guided learning, where I've gained proficiency by incorporating languages like VBA, and SQL into my job. From there, I took the plunge and joined App Academy, a coding bootcamp where I built small applications to solidify my coding skills.
+                </p>
+                <p>
+
+One of my most memorable projects involved developing a Slack clone enabled userss to interact with each other. This experience showed me the transformative power of technology and how it can enhance decision-making processes.
+                </p>
+                <p>
+
+Now, I'm eager to transition into a software engineering role where I can bring my analytical mindset, problem-solving skills, and passion for clean, efficient code to create impactful software solutions. I'm excited about the endless possibilities in this field and am eager to learn from experienced engineers and mentors.
+                </p>
+                <p>
+
+I'm actively seeking entry-level software engineering positions where I can contribute my unique background as a data analyst and my growing coding skills to help build innovative software products. If you're in the tech industry and open to connecting with someone on the cusp of this exciting journey, please feel free to reach out.
+                </p>
+                <p>
+
+Let's connect, collaborate, and build amazing software together!
+                </p> */}
+
             </div>
             <div>Skills</div>
             <div class="skills-img">
