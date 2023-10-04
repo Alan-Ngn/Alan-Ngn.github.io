@@ -101,8 +101,14 @@
 .scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover {
   cursor: pointer;
 }
-
-
+.scroll-bubble {
+  top: 770px;
+  left:300px;
+}
+.start-bubble {
+  top:1080px;
+  left: 52%;
+}
   .talk-bubble {
 	margin: 40px;
   display: inline-block;
@@ -110,8 +116,8 @@
 	width: 200px;
 	height: auto;
 	background-color: lightyellow;
-  top:1080px;
-  left: 52%;
+  /* top:1080px;
+  left: 52%; */
   /* left: 880px; */
   z-index: 1;
 }

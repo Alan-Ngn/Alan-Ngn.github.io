@@ -23,7 +23,7 @@ function Navigation(){
         };
         setTransform(newTransform);
         setTimeout(()=> {
-          setStart("talk-bubble tri-right left-in")
+          setStart("start-bubble talk-bubble tri-right left-in")
         },1000)
       };
 
@@ -37,8 +37,17 @@ function Navigation(){
                 </div>
               </div>
 
+
+
               <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
               <div className="testmap">
+              <div className="scroll-bubble talk-bubble tri-right left-in">
+                <div className="talktext">
+                  <p>
+                    Check out my latest project: Gibberish!
+                  </p>
+                </div>
+              </div>
               <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
                   style={{
                       transform: `translate(${transform.x}px, ${transform.y}px)`
