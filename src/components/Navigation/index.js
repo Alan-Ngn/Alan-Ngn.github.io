@@ -13,7 +13,7 @@ import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
     // const [transform, setTransform] = useState({ x: 20, y: 0})
-    const {transform, setTransform, start, setStart} = useTransform()
+    const {transform, setTransform, start, setStart, scroll} = useTransform()
     // const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e) => {
@@ -41,7 +41,7 @@ function Navigation(){
 
               <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
               <div className="testmap">
-              <div className="scroll-bubble talk-bubble tri-right left-in">
+              <div className={scroll}>
                 <div className="talktext">
                   <p>
                     Check out my latest project: Gibberish!

@@ -1,10 +1,12 @@
 import React, { useRef, useState, useContext } from 'react';
 import ReactDOM from 'react-dom';
 import './Modal.css';
+import { useTransform } from './transform';
 
 const ModalContext = React.createContext();
 
 export function ModalProvider({ children }) {
+  const {transform, setScroll} = useTransform()
   const modalRef = useRef();
   const [modalContent, setModalContent] = useState(null);
   // callback function that will be called when modal is closing
@@ -14,6 +16,10 @@ export function ModalProvider({ children }) {
     setModalContent(null); // clear the modal contents
     // If callback function is truthy, call the callback function and reset it
     // to null:
+    if (transform.x === 0 && transform.y ===900){
+      setScroll("scroll-bubble talk-bubble tri-right left-in")
+    }
+
     if (typeof onModalClose === 'function') {
       setOnModalClose(null);
       onModalClose();
