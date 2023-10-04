@@ -84,7 +84,7 @@ function Navigation(){
               <div className={start}>
                 <div className="talktext">
                   <p>
-                    Yoohooo! My name is Alan Nguyen and I am a Software Engineer! Take this journey to learn more about what I can do!
+                    Yoohooo! My name is Alan Nguyen and I am a Software Engineer! Click on the scroll and start the journey to learn more about me!
                   </p>
                 </div>
               </div>
@@ -137,14 +137,14 @@ function Navigation(){
             </OpenChestModal>
 
             <OpenDragonModal
-              buttonText='EarthBnB'
+              buttonText='EarthBnB Project'
               buttonClassName='dragon'
               modalComponent={<DragonModal/>}
             >
             </OpenDragonModal>
 
             <OpenKnightModal
-              buttonText='Mango Music'
+              buttonText='Mango Music Project'
               buttonClassName='knight'
               modalComponent={<KnightModal/>}
             >

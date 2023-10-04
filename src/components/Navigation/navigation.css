@@ -27,42 +27,42 @@
   width: 200px;
   height:200px;
   position: absolute;
-  top:-110px;
-  left: 60px;
+  top:10px;
+  left: 0px;
   /* left:-15px; */
     /* z-index: 2; */
 }
 .modal-button-wizard {
   position: absolute;
-  top: 900px;
-  left: -400px;
+  top: 780px;
+  left: -340px;
 }
 
 .dragon {
   width: 200px;
   height:200px;
   position: absolute;
-  top: -140px;
-  left:180px;
+  top: 50px;
+  left:10px;
   transform: scaleX(-1);
 }
 .modal-button-dragon {
   position: absolute;
-  top: 470px;
-  left:-400px;
+  top: 280px;
+  left:-250px;
 }
 .knight {
   width: 120px;
   height:120px;
   position: absolute;
-  top: -70px;
-  left:-350px;
+  top: 50px;
+  left:-30px;
   transform: scaleX(-1);
 }
 .modal-button-knight {
   position: absolute;
-  top: 650px;
-  left:380px;
+  top: 532px;
+  left:65px;
 }
 /* .dragon:hover {
     border: 1px solid yellow;
@@ -89,14 +89,14 @@
   height:100px;
   position: absolute;
   top: 40px;
-  left:-25px;
+  left:-10px;
   /* animation: bounce 5s linear infinite; */
   /* transform: scaleX(-1); */
 }
 .modal-button-scroll {
   position: absolute;
   top: 770px;
-  left:0px;
+  left:-10px;
 }
 .scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover {
   cursor: pointer;
@@ -150,6 +150,31 @@
 
 .modal-button-wizard, .modal-button-knight, .modal-button-dragon, .modal-button-chest, .modal-button-scroll, .start {
   height:50px;
+  background-color: #302C2D;
+  border: 1px solid rgb(87, 86, 86);
+  border-radius: 5px;
+  color: white;
+  font-family: minecraftia;
+  /* display: block */
+  width: max-content;
+  text-align: center;
+  /* justify-content: center; */
 
+}
+.button-text {
+  text-align: center;
+}
+.modal-button-wizard:hover, .modal-button-knight:hover, .modal-button-dragon:hover, .modal-button-chest:hover, .modal-button-scroll:hover, .start:hover {
+  cursor: pointer;
 
+}
+
+.site-links {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h3{
+  text-align: center;
 }
