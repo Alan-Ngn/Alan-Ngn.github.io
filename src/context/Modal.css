@@ -21,7 +21,7 @@
 
   #modal-content {
     position: absolute;
-    background-color: #19161D;
+    background-color: rgb(117, 95, 40);
     border-radius: 7px;
     border: 1px solid rgb(87, 86, 86);
     /* height: fit-content; */

@@ -4,7 +4,7 @@ const DragonModal = () => {
 
             <article class="Project">
                 <img className='EarthBnBSplash' src={process.env.PUBLIC_URL + '/EarthbnbSplashPage.PNG'}/>
-                <h3>AlanBnb</h3>
+                <h3>EarthBnB</h3>
                 <p>EarthBnB is a JavaScript, React, Redux, and Express-based clone of Airbnb. It achieves dynamic mapping of vacation rentals on the splash page and enhances scalability through Object-Oriented Programming (OOP) and component-based architecture.</p>
                 <div>
                     <a href="https://earthbnb-xzrt.onrender.com" target="_blank" class="button">Live Link</a>
