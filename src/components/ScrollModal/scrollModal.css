@@ -1,3 +1,12 @@
 .skills-img > img {
     height: 50px
 }
+
+.skills-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 10px
+}
