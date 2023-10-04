@@ -22,11 +22,10 @@ function OpenChestModal({
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === 10 && transform.y ===50){
         setModalContent(modalComponent);
-        setStart("hide");
     } else {
+      setStart("hide");
         setTimeout(()=> {
             setModalContent(modalComponent);
-            setStart("hide");
           },1000)
     }
 

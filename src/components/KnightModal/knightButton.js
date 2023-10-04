@@ -22,11 +22,10 @@ function OpenKnightModal({
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === 20 && transform.y ===650){
         setModalContent(modalComponent);
-        setStart("hide");
     } else {
+      setStart("hide");
         setTimeout(()=> {
             setModalContent(modalComponent);
-            setStart("hide");
           },1200)
     }
 

@@ -22,11 +22,10 @@ function OpenScrollModal({
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === 0 && transform.y ===900){
         setModalContent(modalComponent);
-        setStart("hide");
     } else {
+      setStart("hide");
         setTimeout(()=> {
             setModalContent(modalComponent);
-            setStart("hide");
           },1200)
     }
 
