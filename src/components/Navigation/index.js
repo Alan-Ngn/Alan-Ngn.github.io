@@ -22,7 +22,11 @@ function Navigation(){
           y: 1180,
         };
         setTransform(newTransform);
-        setScroll('hide')
+        setScroll('hide');
+        setWizard("hide");
+        setKnight("hide");
+        setDragon("hide");
+        setChest("hide")
         setTimeout(()=> {
           setStart("start-bubble talk-bubble tri-right left-in")
         },1000)

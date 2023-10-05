@@ -8,7 +8,7 @@ const ScrollModal = () => {
             </div>
             <div>
                 <p>
-                My name is Alan Nguyen and I'm a software engineer with an undergraduate degree in mathematics and 4+ years of work experience in data analytics.
+                My name is Alan Nguyen and I'm a software engineer with an Bachelor's degree in Mathematics and 4+ years of work experience in data analytics.
                 </p>
                 {/* <p>
 
