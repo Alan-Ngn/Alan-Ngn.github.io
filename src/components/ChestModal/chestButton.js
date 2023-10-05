@@ -10,7 +10,7 @@ function OpenChestModal({
   buttonClassName
 }) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart } = useTransform()
+  const { transform, setTransform, setStart, setChest, setScroll, setDragon, setKnight, setWizard } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -18,15 +18,19 @@ function OpenChestModal({
       y: 360,
     };
     setTransform(newTransform);
-
+    setChest("hide")
     if (onModalClose) setOnModalClose(onModalClose);
-    if (transform.x === 10 && transform.y ===50){
+    if (transform.x === 0 && transform.y ===360){
         setModalContent(modalComponent);
     } else {
       setStart("hide");
-        setTimeout(()=> {
-            setModalContent(modalComponent);
-          },1000)
+      setWizard("hide");
+      setScroll("hide");
+      setKnight("hide");
+      setDragon("hide");
+      setTimeout(()=> {
+          setModalContent(modalComponent);
+        },1000)
     }
 
     if (onButtonClick) onButtonClick();

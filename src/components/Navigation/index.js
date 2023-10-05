@@ -13,7 +13,7 @@ import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
     // const [transform, setTransform] = useState({ x: 20, y: 0})
-    const {transform, setTransform, start, setStart, scroll, setScroll} = useTransform()
+    const {transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest} = useTransform()
     // const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e) => {
@@ -42,61 +42,97 @@ function Navigation(){
 
               <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
               <div className="testmap">
-              <div className={scroll}>
-                <div className="talktext">
-                  <p>
-                    Check out my latest project: Gibberish!
-                  </p>
+
+                <div className={scroll}>
+                  <div className="talktext">
+                    <p>
+                      Click on the Wizard to check out my latest project: Gibberish!
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
-                  style={{
-                      transform: `translate(${transform.x}px, ${transform.y}px)`
-                  }}
-              />
 
-            <button
-                onClick={handleStart}
-                className="start"
-            >
-                Start
-            </button>
+                <div className={wizard}>
+                  <div className="talktext">
+                    <p>
+                      Click on the knight to check out my collaborative project: Mango Music!
+                    </p>
+                  </div>
+                </div>
+
+                <div className={knight}>
+                  <div className="talktext">
+                    <p>
+                      Click on the dragon to check out my first project: EarthBnB!
+                    </p>
+                  </div>
+                </div>
 
 
-            <OpenChestModal
-              buttonText='Contact'
-              buttonClassName='chest'
-              modalComponent={<ChestModal/>}
-            >
-            </OpenChestModal>
+                <div className={dragon}>
+                  <div className="talktext">
+                    <p>
+                      Click on the chest to discover ways to connect as well as download my resume!
+                    </p>
+                  </div>
+                </div>
 
-            <OpenDragonModal
-              buttonText='EarthBnB Project'
-              buttonClassName='dragon'
-              modalComponent={<DragonModal/>}
-            >
-            </OpenDragonModal>
+                <div className={chest}>
+                  <div className="talktext">
+                    <p>
+                      Thanks for taking the time to know me!
+                    </p>
+                  </div>
+                </div>
 
-            <OpenKnightModal
-              buttonText='Mango Music Project'
-              buttonClassName='knight'
-              modalComponent={<KnightModal/>}
-            >
-            </OpenKnightModal>
 
-            <OpenWizardModal
-              buttonText='Gibberish Project'
-              buttonClassName='wizard'
-              modalComponent={<WizardModal/>}
-            >
-            </OpenWizardModal>
+                <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}
+                    style={{
+                        transform: `translate(${transform.x}px, ${transform.y}px)`
+                    }}
+                />
 
-            <OpenScrollModal
-              buttonText='About Me'
-              buttonClassName='scroll'
-              modalComponent={<ScrollModal/>}
-            >
-            </OpenScrollModal>
+                <button
+                    onClick={handleStart}
+                    className="start"
+                >
+                    Start
+                </button>
+
+
+                <OpenChestModal
+                  buttonText='Contact'
+                  buttonClassName='chest'
+                  modalComponent={<ChestModal/>}
+                >
+                </OpenChestModal>
+
+                <OpenDragonModal
+                  buttonText='EarthBnB Project'
+                  buttonClassName='dragon'
+                  modalComponent={<DragonModal/>}
+                >
+                </OpenDragonModal>
+
+                <OpenKnightModal
+                  buttonText='Mango Music Project'
+                  buttonClassName='knight'
+                  modalComponent={<KnightModal/>}
+                >
+                </OpenKnightModal>
+
+                <OpenWizardModal
+                  buttonText='Gibberish Project'
+                  buttonClassName='wizard'
+                  modalComponent={<WizardModal/>}
+                >
+                </OpenWizardModal>
+
+                <OpenScrollModal
+                  buttonText='About Me'
+                  buttonClassName='scroll'
+                  modalComponent={<ScrollModal/>}
+                >
+                </OpenScrollModal>
 
             </div>
 

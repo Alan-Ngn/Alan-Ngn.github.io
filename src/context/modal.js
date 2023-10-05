@@ -6,7 +6,7 @@ import { useTransform } from './transform';
 const ModalContext = React.createContext();
 
 export function ModalProvider({ children }) {
-  const {transform, setScroll} = useTransform()
+  const {transform, setScroll, setWizard, setKnight, setDragon, setChest } = useTransform()
   const modalRef = useRef();
   const [modalContent, setModalContent] = useState(null);
   // callback function that will be called when modal is closing
@@ -18,6 +18,22 @@ export function ModalProvider({ children }) {
     // to null:
     if (transform.x === 0 && transform.y ===900){
       setScroll("scroll-bubble talk-bubble tri-right left-in")
+    }
+
+    if (transform.x === -200 && transform.y ===900){
+      setWizard("wizard-bubble talk-bubble tri-right left-in")
+    }
+
+    if (transform.x === 20 && transform.y ===650){
+      setKnight("knight-bubble talk-bubble tri-left right-in")
+    }
+
+    if (transform.x === -40 && transform.y ===450){
+      setDragon("dragon-bubble talk-bubble tri-right left-in")
+    }
+
+    if (transform.x === 0 && transform.y === 360){
+      setChest("chest-bubble talk-bubble tri-right left-in");
     }
 
     if (typeof onModalClose === 'function') {

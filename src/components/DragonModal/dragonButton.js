@@ -10,7 +10,7 @@ function OpenDragonModal({
   buttonClassName
 }) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart } = useTransform()
+  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -18,15 +18,19 @@ function OpenDragonModal({
       y: 450,
     };
     setTransform(newTransform);
-
+    setDragon("hide")
     if (onModalClose) setOnModalClose(onModalClose);
     if (transform.x === -40 && transform.y ===450){
         setModalContent(modalComponent);
     } else {
-        setTimeout(()=> {
-          setStart("hide");
-            setModalContent(modalComponent);
-          },1200)
+      setStart("hide");
+      setWizard("hide");
+      setScroll("hide");
+      setKnight("hide");
+      setChest("hide");
+      setTimeout(()=> {
+          setModalContent(modalComponent);
+        },1200)
     }
 
     if (onButtonClick) onButtonClick();
