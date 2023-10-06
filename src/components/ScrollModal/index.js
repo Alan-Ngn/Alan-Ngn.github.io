@@ -73,6 +73,7 @@ Let's connect, collaborate, and build amazing software together!
 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original-wordmark.svg" />
 
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
             </div>
         </div>
 
