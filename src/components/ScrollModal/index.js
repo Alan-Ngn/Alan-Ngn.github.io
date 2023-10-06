@@ -8,8 +8,20 @@ const ScrollModal = () => {
             </div>
             <div>
                 <p>
-                My name is Alan Nguyen and I'm a software engineer with an Bachelor's degree in Mathematics and 4+ years of work experience in data analytics.
+                    My name is Alan Nguyen and I'm a software engineer with a Bachelor's degree in Mathematics and 4+ years of work experience in data analytics.
                 </p>
+                <p>
+                    I've spent the past few years dissecting datasets, deriving insights, and building data-driven solutions that have provided valuable information to stakeholders. During this time, I discovered my passion for coding.
+                </p>
+                <p>
+                    My journey into software engineering started with self-guided learning, where I built upon my knowledge of Excel with VBA and my knowledge of Alteryx with SQL to automate and create efficient reports. From there, I took the next step and joined App Academy, a coding bootcamp where I learned to build applications and hone my coding skills.
+                </p>
+
+                <p>
+                    I'm actively seeking software engineering positions where I can contribute my unique background as a data analyst and my growing coding skills to help build innovative software products.
+                </p>
+                {/* process improvements through automation
+                    self-learning */}
                 {/* <p>
 
                 As a data analyst, I've spent the past few years dissecting datasets, deriving insights, and building data-driven solutions that have provided valuable information to decision-makers. During this time, I discovered my passion for coding and building software applications.
