@@ -4,7 +4,9 @@ const ChestModal = () => {
         <div className="contacts">
 
 
-
+			<p>
+			Let's connect, collaborate, and build amazing software together!
+			</p>
 			<div className="resume-download">
 				<img  className='resume' src={process.env.PUBLIC_URL + '/Resume.PNG'}/>
 				<div className="download-icon">
