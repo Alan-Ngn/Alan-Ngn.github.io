@@ -72,6 +72,7 @@ export function Modal() {
       <div id="modal-background" onClick={closeModal} />
       <div id="modal-content">
         {modalContent}
+      {/* <img className='wall' src={process.env.PUBLIC_URL + '/wall1.jpg'}/> */}
       </div>
     </div>,
     modalRef.current

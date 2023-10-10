@@ -1,6 +1,6 @@
 .profile-pic{
     position: relative;
-    z-index:0;
+    z-index:1;
     height: 20vh;
     width: 100%;
     object-fit: cover;
@@ -11,7 +11,7 @@
 .frame {
     z-index:1;
     position:absolute;
-    height:20vh;
+    height:263px;
    /* right: 300px; */
     /* right: auto; */
     object-fit: contain;
