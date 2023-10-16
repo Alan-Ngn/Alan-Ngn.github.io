@@ -24,7 +24,7 @@
     background-color: rgb(117, 95, 40);
     /* border-radius: 7px; */
     /* border: 1px solid rgb(87, 86, 86); */
-    /* height: fit-content; */
+    height: fit-content;
     width: 400px;
     color: white;
     display: flex;
@@ -47,4 +47,3 @@
   background-color: black;
   color:white
 }
-

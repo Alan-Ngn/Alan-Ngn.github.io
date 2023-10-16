@@ -10,3 +10,9 @@
     justify-content: space-evenly;
     gap: 10px
 }
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+

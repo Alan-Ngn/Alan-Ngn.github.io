@@ -6,7 +6,7 @@ const ScrollModal = () => {
                 <img  className='frame' src={process.env.PUBLIC_URL + '/frame.png'}/>
                 <img  className='profile' src={process.env.PUBLIC_URL + '/profile.png'}/>
             </div>
-            <div>
+            <div className="about-me">
                 <p>
                     My name is Alan Nguyen and I'm a software engineer with a Bachelor's degree in Mathematics and 4+ years of work experience in data analytics.
                 </p>
