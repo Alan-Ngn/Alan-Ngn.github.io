@@ -1,7 +1,13 @@
+import { useModal } from "../../context/modal";
 import "./scrollModal.css";
 const ScrollModal = () => {
+    const { closeModal } = useModal()
+
     return (
         <div>
+            <button className="close-button" onClick={closeModal}>
+                <i class="fa-regular fa-rectangle-xmark"></i>
+            </button>
             <div className="profile-pic">
                 <img  className='frame' src={process.env.PUBLIC_URL + '/frame.png'}/>
                 <img  className='profile' src={process.env.PUBLIC_URL + '/profile.png'}/>
@@ -48,7 +54,7 @@ Let's connect, collaborate, and build amazing software together!
                 </p> */}
 
             </div>
-            <div>Skills</div>
+            <h3>Skills</h3>
             <div class="skills-img">
 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />

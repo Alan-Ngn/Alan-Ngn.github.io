@@ -20,19 +20,25 @@
   }
 
   #modal-content {
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(117, 95, 40);
     /* border-radius: 7px; */
     /* border: 1px solid rgb(87, 86, 86); */
-    height: fit-content;
-    width: 400px;
+    /* height: fit-content; */
+    /* min-width: 40%; */
+    /* min-height: 80%; */
+    width: 60%;
+    /* max-width: 80%; */
+    /* width: 400px; */
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    /* display: inline-block; */
     /* align-items: center; */
     /* justify-content: center; */
     padding: 10px;
-    /* z-index: 2; */
+    z-index: 2;
 
   }
 
@@ -46,4 +52,9 @@
 .project-button:hover{
   background-color: black;
   color:white
+}
+@media only screen and (max-height: 900px) {
+  #modal-content {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 .skills-img > img {
-    height: 50px
+    height: 60px
 }
 
 .skills-img {
@@ -16,3 +16,17 @@
     flex-direction: column;
 }
 
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    /* align-self: self-end; */
+    float: right;
+    font-size: 30px;
+}
+
+.close-button:hover {
+    color: white
+}
