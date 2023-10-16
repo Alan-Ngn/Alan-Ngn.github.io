@@ -1,4 +1,10 @@
 const DragonModal = () => {
+    const openLiveLink = () => {
+        window.open("https://earthbnb-xzrt.onrender.com", "_blank")
+    }
+    const openGithub = () => {
+        window.open("https://github.com/Alan-Ngn/API-project", "_blank")
+    }
     return (
         <div>
 
@@ -7,8 +13,12 @@ const DragonModal = () => {
                 <h3>EarthBnB</h3>
                 <p>EarthBnB is a JavaScript, React, Redux, and Express-based clone of Airbnb. It achieves dynamic mapping of vacation rentals on the splash page and enhances scalability through Object-Oriented Programming (OOP) and component-based architecture.</p>
                 <div className="site-links">
-                    <a href="https://earthbnb-xzrt.onrender.com" target="_blank" class="button">Live Link</a>
-                    <a href="https://github.com/Alan-Ngn/API-project" target="_blank" class="button">Github</a>
+                    <button onClick={openLiveLink}>
+                        Live Link
+                    </button>
+                    <button onClick={openGithub}>
+                        Github
+                    </button>
                 </div>
             </article>
         </div>
