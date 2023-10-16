@@ -13,10 +13,10 @@ const DragonModal = () => {
                 <h3>EarthBnB</h3>
                 <p>EarthBnB is a JavaScript, React, Redux, and Express-based clone of Airbnb. It achieves dynamic mapping of vacation rentals on the splash page and enhances scalability through Object-Oriented Programming (OOP) and component-based architecture.</p>
                 <div className="site-links">
-                    <button onClick={openLiveLink}>
+                    <button className="project-button" onClick={openLiveLink}>
                         Live Link
                     </button>
-                    <button onClick={openGithub}>
+                    <button className="project-button" onClick={openGithub}>
                         Github
                     </button>
                 </div>

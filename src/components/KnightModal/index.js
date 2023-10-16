@@ -12,10 +12,10 @@ const KnightModal = () => {
                 <h3>Mango Music</h3>
                 <p>Mango Music draws inspiration from Apple Music and employs JavaScript, React, Redux, Python, Flask, SQLAlchemy, AWS S3, HTML, and CSS. It features a persistent global player, and an integration with AWS S3 for storing and serving .mp4 files.</p>
                 <div className="site-links">
-                    <button onClick={openLiveLink}>
+                    <button className="project-button" onClick={openLiveLink}>
                         Live Link
                     </button>
-                    <button onClick={openGithub}>
+                    <button className="project-button" onClick={openGithub}>
                         Github
                     </button>
 

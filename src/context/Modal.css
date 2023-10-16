@@ -35,3 +35,16 @@
     /* z-index: 2; */
 
   }
+
+.project-button {
+  border-radius: 3px;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.project-button:hover{
+  background-color: black;
+  color:white
+}
+

@@ -219,3 +219,10 @@
 h3{
   text-align: center;
 }
+p, h3 {
+  /* font-family: minecraftia;
+  src: url(/public/minecraftia.ttf); */
+  /* font-size: small; */
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}

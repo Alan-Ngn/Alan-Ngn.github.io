@@ -11,10 +11,10 @@ const WizardModal = () => {
                 <h3>Gibberish</h3>
                 <p>Gibberish is a Slack-inspired website that utilizes JavaScript, React, Redux, Python, Flask, SQLAlchemy, SocketIO, HTML, and CSS. It integrates real-time communication through sockets for all CRUD operations and optimizes rendering by building relationships with multiple tables and utilizing one reducer.</p>
                 <div className="site-links">
-                <button onClick={openLiveLink}>
+                    <button className="project-button" onClick={openLiveLink}>
                         Live Link
                     </button>
-                    <button onClick={openGithub}>
+                    <button className="project-button" onClick={openGithub}>
                         Github
                     </button>
                 </div>
