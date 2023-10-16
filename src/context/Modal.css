@@ -22,8 +22,8 @@
   #modal-content {
     position: absolute;
     background-color: rgb(117, 95, 40);
-    border-radius: 7px;
-    border: 1px solid rgb(87, 86, 86);
+    /* border-radius: 7px; */
+    /* border: 1px solid rgb(87, 86, 86); */
     /* height: fit-content; */
     width: 400px;
     color: white;
@@ -31,7 +31,7 @@
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: center; */
-    padding: 20px;
+    padding: 10px;
     /* z-index: 2; */
 
   }
