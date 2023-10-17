@@ -27,7 +27,9 @@
     /* height: fit-content; */
     /* min-width: 40%; */
     /* max-height: 80%; */
-    max-width: 700px;
+    /* max-height: min-content; */
+    max-width: 40em;
+    /* max-height: 40em; */
     /* max-width: 80%; */
     /* width: 400px; */
     color: white;
@@ -55,6 +57,6 @@
 }
 @media only screen and (max-height: 900px) {
   #modal-content {
-    width: 100%;
+    /* max-width: 100em; */
   }
 }

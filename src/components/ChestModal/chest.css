@@ -3,7 +3,12 @@
     /* object-fit:fill; */
     /* min-height:max-content; */
     /* display: flex; */
-    height: 100%;
+    /* justify-content: center; */
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100%; */
 
 
 }
@@ -75,5 +80,13 @@
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+    /* align-items: center; */
 }
+@media only screen and (max-height: 988px) {
+    .resume, .download-icon,.resume-download {
+        width: 28em;
+
+    }
+
+  }
