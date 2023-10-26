@@ -25,9 +25,11 @@
     /* border-radius: 7px; */
     /* border: 1px solid rgb(87, 86, 86); */
     /* height: fit-content; */
+    /* max-height: 800px; */
     /* min-width: 40%; */
     /* max-height: 80%; */
     /* max-height: min-content; */
+    /* height: 100%; */
     max-width: 40em;
     /* max-height: 40em; */
     /* max-width: 80%; */
@@ -39,9 +41,10 @@
     /* display: inline-block; */
     /* align-items: center; */
     /* justify-content: center; */
+
     padding: 10px;
     z-index: 2;
-
+    overflow-y: auto
   }
 
 .project-button {
@@ -55,8 +58,23 @@
   background-color: black;
   color:white
 }
-@media only screen and (max-height: 900px) {
+/*
+@media only screen and (max-height: 740px) {
   #modal-content {
-    /* max-width: 100em; */
+    width: 30em
+  }
+
+} */
+/*
+@media only screen and (max-height: 600px) {
+  #modal-content {
+
+    max-height:100px;
+  }
+
+} */
+@media only screen and (max-height: 904px) {
+  #modal-content {
+    height: 100%;
   }
 }

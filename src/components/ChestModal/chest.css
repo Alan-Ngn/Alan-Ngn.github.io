@@ -90,3 +90,19 @@
     }
 
   }
+  @media only screen and (max-height: 740px) {
+    .resume, .download-icon,.resume-download {
+        width: 20em;
+
+
+    }
+
+  }
+  @media only screen and (max-height: 600px) {
+    .resume, .download-icon,.resume-download {
+        width: 15em;
+        height: 300px
+
+    }
+
+  }

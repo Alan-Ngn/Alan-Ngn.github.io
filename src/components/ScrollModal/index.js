@@ -4,7 +4,7 @@ const ScrollModal = () => {
     const { closeModal } = useModal()
 
     return (
-        <div>
+        <div className="scroll-modal">
             <button className="close-button" onClick={closeModal}>
                 <i class="fa-regular fa-rectangle-xmark"></i>
             </button>

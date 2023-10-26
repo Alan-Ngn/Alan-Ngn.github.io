@@ -30,3 +30,7 @@
 .close-button:hover {
     color: white
 }
+
+.scroll-modal {
+    height: 100%;
+}
