@@ -34,6 +34,14 @@ function Navigation(){
 
     return (
         <>
+
+
+
+
+              <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
+              <div className="testmap">
+
+
               <div className={start}>
                 <div className="talktext">
                   <p>
@@ -41,12 +49,7 @@ function Navigation(){
                   </p>
                 </div>
               </div>
-
-
-
-              <img className='landscape' src={process.env.PUBLIC_URL + '/landscape.jpg'}/>
-              <div className="testmap">
-
+              
                 <div className={scroll}>
                   <div className="talktext">
                     <p>
