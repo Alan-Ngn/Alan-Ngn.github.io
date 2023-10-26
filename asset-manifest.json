@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.188752e1.css",
-    "main.js": "/static/js/main.30085c03.js",
+    "main.css": "/static/css/main.ec217f40.css",
+    "main.js": "/static/js/main.d57a7885.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/minecraftia.ttf": "/static/media/minecraftia.69fd3db14fbc8b3f7cdb.ttf",
     "index.html": "/index.html",
-    "main.188752e1.css.map": "/static/css/main.188752e1.css.map",
-    "main.30085c03.js.map": "/static/js/main.30085c03.js.map",
+    "main.ec217f40.css.map": "/static/css/main.ec217f40.css.map",
+    "main.d57a7885.js.map": "/static/js/main.d57a7885.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.188752e1.css",
-    "static/js/main.30085c03.js"
+    "static/css/main.ec217f40.css",
+    "static/js/main.d57a7885.js"
   ]
 }
