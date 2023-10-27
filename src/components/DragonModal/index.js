@@ -11,7 +11,7 @@ const DragonModal = () => {
         window.open("https://github.com/Alan-Ngn/API-project", "_blank")
     }
     return (
-        <div>
+        
 
             <article class="Project">
                 <button className="close-button" onClick={closeModal}>
@@ -29,7 +29,7 @@ const DragonModal = () => {
                     </button>
                 </div>
             </article>
-        </div>
+
 
     )
 }
