@@ -20,9 +20,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     z-index: 3;
-    /* align-self: self-end; */
+    align-self: self-end;
     float: right;
     font-size: 30px;
     padding: 0;
