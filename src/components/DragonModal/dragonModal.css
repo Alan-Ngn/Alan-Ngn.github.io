@@ -11,7 +11,7 @@
 
   }
 
-.earth-image-link {
+.image-link {
     position: relative;
     /* object-fit:fill; */
     /* min-height:max-content; */
@@ -67,10 +67,10 @@
     opacity: 1
 }
 
-.link-github-icon > a > .fa-brands, .fa-solid {
+.link-github-icon > a > .fa-brands, .link-github-icon > a > .fa-solid {
     color: white
 }
-.link-github-icon > a > .fa-brands:hover {
+.link-github-icon > a > .fa-brands:hover, .link-github-icon > a > .fa-solid:hover  {
     /* position: rel; */
     /* display:none */
     color: blueviolet;

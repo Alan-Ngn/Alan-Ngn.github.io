@@ -1,6 +1,7 @@
 .GibberishSplash {
     width: 100%;
-    height:100%;
+    /* height:100%; */
+    display:block;
 }
 @media only screen and (max-height: 988px) {
     .GibberishSplash {
@@ -9,3 +10,6 @@
     }
 
   }
+  .GibberishSplash:hover{
+    filter: opacity(50%)
+}

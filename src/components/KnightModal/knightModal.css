@@ -1,6 +1,6 @@
 .MangoSplash {
     width: 100%;
-    height:100%;
+    /* height:100%; */
 }
 @media only screen and (max-height: 988px) {
     .MangoSplash {
@@ -9,3 +9,70 @@
     }
 
   }
+
+  .earth-image-link {
+    position: relative;
+    /* object-fit:fill; */
+    /* min-height:max-content; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100%; */
+
+
+}
+.MangoSplash {
+    width: 100%;
+    /* position: absolute; */
+    display:block;
+
+}
+
+.MangoSplash:hover{
+        filter: opacity(50%)
+}
+
+.fa-solid, .fa-brands {
+    /* position: rel; */
+    /* display:none */
+    color: black;
+    font-size: 40px;
+
+}
+.link-github-icon  {
+    position: absolute;
+    /* top: 50%; */
+    top: 0;
+    left: 0;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    width: 100%;
+    justify-content: center;
+    /* z-index: 1; */
+    /* display:none */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    align-items: center;
+    transition: opacity 0.25s;
+
+}
+
+.link-github-icon:hover {
+    opacity: 1
+}
+
+.link-github-icon > a > .fa-brands, .link-github-icon > a > .fa-solid {
+    color: white
+}
+.link-github-icon > a > .fa-brands:hover, .link-github-icon > a > .fa-solid:hover  {
+    /* position: rel; */
+    /* display:none */
+    color: blueviolet;
+    /* font-size: 40px; */
+
+}
