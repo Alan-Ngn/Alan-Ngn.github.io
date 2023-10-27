@@ -1,9 +1,13 @@
+import { useModal } from "../../context/modal";
 import "./chest.css";
 const ChestModal = () => {
+	const { closeModal } = useModal()
     return (
         <div className="contacts">
 
-
+			<button className="contact-close-button" onClick={closeModal}>
+				<i class="fa-regular fa-rectangle-xmark"></i>
+			</button>
 			<p>
 			Let's connect, collaborate, and build amazing software together!
 			</p>

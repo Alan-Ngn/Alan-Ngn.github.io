@@ -82,7 +82,26 @@
     flex-direction: column;
     gap: 20px;
     /* align-items: center; */
+    height: 100%;
 }
+
+
+.contact-close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* position: relative; */
+    z-index: 3;
+    align-self: self-end;
+
+    float: right;
+    font-size: 30px;
+}
+
+.contact-close-button:hover {
+    color: white
+}
+
 @media only screen and (max-height: 988px) {
     .resume, .download-icon,.resume-download {
         width: 28em;
