@@ -96,6 +96,7 @@
 
     float: right;
     font-size: 30px;
+    padding: 0;
 }
 
 .contact-close-button:hover {

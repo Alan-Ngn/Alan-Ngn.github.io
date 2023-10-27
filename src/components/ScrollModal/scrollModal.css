@@ -25,6 +25,7 @@
     /* align-self: self-end; */
     float: right;
     font-size: 30px;
+    padding: 0;
 }
 
 .close-button:hover {
