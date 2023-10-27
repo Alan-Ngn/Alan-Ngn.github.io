@@ -107,24 +107,24 @@
 }
 
 .knight-bubble {
-  top: 580px;
+  top: 555px;
   left: -240px;
 }
 
 .wizard-bubble {
-  top: 810px;
+  top: 790px;
   left: -170px;
 }
 .dragon-bubble {
-  top: 360px;
+  top: 340px;
   left: -10px;
 }
 .chest-bubble {
-  top: 300px;
+  top: 285px;
   left: 30px;
 }
 .scroll-bubble {
-  top: 830px;
+  top: 805px;
   left:30px;
 }
 
