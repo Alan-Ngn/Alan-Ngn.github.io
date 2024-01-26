@@ -1,12 +1,13 @@
 import { useModal } from "../../context/modal";
+import React from 'react';
 import "./chest.css";
-const ChestModal = () => {
+export const ChestModal = () => {
 	const { closeModal } = useModal()
     return (
         <div className="contacts">
 
 			<button className="contact-close-button" onClick={closeModal}>
-				<i class="fa-regular fa-rectangle-xmark"></i>
+				<i className="fa-regular fa-rectangle-xmark"></i>
 			</button>
 			<p>
 			Let's connect, collaborate, and build amazing software together!
@@ -15,10 +16,10 @@ const ChestModal = () => {
 				<img  className='resume' src={process.env.PUBLIC_URL + '/Resume.PNG'}/>
 				<div className="download-icon">
 					<a href={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'} target="_blank">
-						<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						<i className="fa-solid fa-arrow-up-right-from-square"></i>
 					</a>
 					<a className='resume-icon' href={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'} download={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'}>
-						<i class="fa-solid fa-file-arrow-down"></i>
+						<i className="fa-solid fa-file-arrow-down"></i>
 					</a>
 				</div>
 			</div>
@@ -28,13 +29,13 @@ const ChestModal = () => {
 					<i className="fa-brands fa-github" />
 				</a>
 				<a href="https://www.linkedin.com/in/alannguyen21" rel="noreferrer" target="_blank">
-					<i class="fa-brands fa-linkedin"></i>
+					<i className="fa-brands fa-linkedin"></i>
 				</a>
 				<a href="https://wellfound.com/u/alan-nguyen-31" rel="noreferrer" target="_blank">
 					<i className="fa-brands fa-angellist" />
 				</a>
 				<a href="mailto:alanngn21@gmail.com" target="_blank" >
-					<i class="fa-solid fa-envelope"></i>
+					<i className="fa-solid fa-envelope"></i>
 				</a>
 			</div>
 
@@ -45,4 +46,4 @@ const ChestModal = () => {
     )
 }
 
-export default ChestModal
+// export default ChestModal

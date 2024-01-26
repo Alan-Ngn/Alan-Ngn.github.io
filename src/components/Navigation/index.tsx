@@ -1,5 +1,5 @@
 import { useTransform } from "../../context/transform";
-import ChestModal from "../ChestModal";
+import { ChestModal } from "../ChestModal";
 import OpenChestModal from "../ChestModal/chestButton";
 import DragonModal from "../DragonModal";
 import OpenDragonModal from "../DragonModal/dragonButton";
@@ -16,7 +16,7 @@ function Navigation(){
     const {transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest} = useTransform()
     // const [start, setStart] = useState("talk-bubble tri-right left-in")
 
-    const handleStart = (e) => {
+    const handleStart = (e:any) => {
         const newTransform = {
           x: 20,
           y: 1180,
