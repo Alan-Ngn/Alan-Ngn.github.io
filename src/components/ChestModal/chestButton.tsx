@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import { useModal } from '../../context/modal';
+
 import { useTransform } from '../../context/transform';
 // import './OpenModalButton.css'
+
+type OpenChestModalProps = {
+  modalComponent: ReactNode;
+  buttonText: string;
+  onButtonClick?: () => void;
+  onModalClose?: () => void;
+  buttonClassName: string;
+}
 function OpenChestModal({
   modalComponent, // component to render inside the modal
   buttonText, // text of the button that opens the modal
   onButtonClick, // optional: callback function that will be called once the button that opens the modal is clicked
   onModalClose, // optional: callback function that will be called once the modal is closed
   buttonClassName
-}) {
+}: OpenChestModalProps) {
   const { setModalContent, setOnModalClose } = useModal();
   const { transform, setTransform, setStart, setChest, setScroll, setDragon, setKnight, setWizard } = useTransform()
 
