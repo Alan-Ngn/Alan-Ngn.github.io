@@ -1,12 +1,12 @@
 import { useTransform } from "../../context/transform";
 import { ChestModal } from "../ChestModal";
 import OpenChestModal from "../ChestModal/chestButton";
-import DragonModal from "../DragonModal";
+import {DragonModal} from "../DragonModal";
 import OpenDragonModal from "../DragonModal/dragonButton";
 import KnightModal from "../KnightModal";
 import OpenKnightModal from "../KnightModal/knightButton";
-import ScrollModal from "../ScrollModal";
-import OpenScrollModal from "../ScrollModal/ScrollButton";
+import {ScrollModal} from "../ScrollModal";
+import OpenScrollModal from "../ScrollModal/scrollButton";
 import WizardModal from "../WizardModal";
 import OpenWizardModal from "../WizardModal/WizardButton";
 import "./navigation.css";
