@@ -1,27 +1,20 @@
 import { useModal } from "../../context/modal";
 import "./dragonModal.css";
-const DragonModal = () => {
-
+import React from 'react'
+export const DragonModal = () => {
     const { closeModal } = useModal()
-
-    const openLiveLink = () => {
-        window.open("https://earthbnb-xzrt.onrender.com", "_blank")
-    }
-    const openGithub = () => {
-        window.open("https://github.com/Alan-Ngn/API-project", "_blank")
-    }
     return (
 
 
-            <article class="Project">
+            <article className="Project">
                 <button className="close-button" onClick={closeModal}>
-                    <i class="fa-regular fa-rectangle-xmark"></i>
+                    <i className="fa-regular fa-rectangle-xmark"></i>
                 </button>
                 <div className="image-link">
                     <img className='EarthBnBSplash' src={process.env.PUBLIC_URL + '/EarthbnbSplashPage.PNG'}/>
                     <div className="link-github-icon">
                         <a href="https://earthbnb-xzrt.onrender.com" rel="noreferrer" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                         <a href="https://github.com/Alan-Ngn/API-project" rel="noreferrer" target="_blank">
                             <i className="fa-brands fa-github" />
@@ -39,7 +32,7 @@ const DragonModal = () => {
                     </button>
                 </div> */}
                 <h3>Skills</h3>
-                    <div class="skills-img">
+                    <div className="skills-img">
 
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 
@@ -63,5 +56,3 @@ const DragonModal = () => {
 
     )
 }
-
-export default DragonModal
