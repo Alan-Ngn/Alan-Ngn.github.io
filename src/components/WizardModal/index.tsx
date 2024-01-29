@@ -1,6 +1,7 @@
 import { useModal } from "../../context/modal";
 import "./wizardModal.css";
-const WizardModal = () => {
+import React from 'react'
+export const WizardModal = () => {
 
     const { closeModal } = useModal()
 
@@ -11,15 +12,15 @@ const WizardModal = () => {
         window.open("https://github.com/Alan-Ngn/Gibberish", "_blank")
     }
     return (
-            <article class="Project">
+            <article className="Project">
                 <button className="close-button" onClick={closeModal}>
-                    <i class="fa-regular fa-rectangle-xmark"></i>
+                    <i className="fa-regular fa-rectangle-xmark"></i>
                 </button>
                 <div className="image-link">
                     <img className='GibberishSplash' src={process.env.PUBLIC_URL + '/GibberishSplashPage.PNG'}/>
                     <div className="link-github-icon">
                         <a href="https://gibberish-z0ju.onrender.com" rel="noreferrer" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                         <a href="https://github.com/Alan-Ngn/Gibberish" rel="noreferrer" target="_blank">
                             <i className="fa-brands fa-github" />
@@ -38,7 +39,7 @@ const WizardModal = () => {
                     </button>
                 </div> */}
                             <h3>Skills</h3>
-                <div class="skills-img">
+                <div className="skills-img">
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 
@@ -64,4 +65,4 @@ const WizardModal = () => {
     )
 }
 
-export default WizardModal
+// export default WizardModal
