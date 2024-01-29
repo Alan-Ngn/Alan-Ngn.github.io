@@ -1,6 +1,7 @@
 import { useModal } from "../../context/modal";
+import React from 'react'
 import "./knightModal.css";
-const KnightModal = () => {
+export const KnightModal = () => {
     const { closeModal } = useModal()
     const openLiveLink = () => {
         window.open("https://mango-music-4c4k.onrender.com", "_blank")
@@ -9,15 +10,15 @@ const KnightModal = () => {
         window.open("https://github.com/Mango-WorldWide/Mango-Music", "_blank")
     }
     return (
-            <article class="Project">
+            <article className="Project">
                 <button className="close-button" onClick={closeModal}>
-                    <i class="fa-regular fa-rectangle-xmark"></i>
+                    <i className="fa-regular fa-rectangle-xmark"></i>
                 </button>
                 <div className="image-link">
                     <img className='MangoSplash' src={process.env.PUBLIC_URL + '/MangoMusicThumb.PNG'}/>
                     <div className="link-github-icon">
                         <a href="https://mango-music-4c4k.onrender.com" rel="noreferrer" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                         <a href="https://github.com/Mango-WorldWide/Mango-Music" rel="noreferrer" target="_blank">
                             <i className="fa-brands fa-github" />
@@ -37,7 +38,7 @@ const KnightModal = () => {
 
                 </div> */}
                 <h3>Skills</h3>
-                <div class="skills-img">
+                <div className="skills-img">
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 
@@ -62,5 +63,3 @@ const KnightModal = () => {
             </article>
     )
 }
-
-export default KnightModal

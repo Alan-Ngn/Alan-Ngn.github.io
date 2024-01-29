@@ -3,12 +3,12 @@ import { ChestModal } from "../ChestModal";
 import OpenChestModal from "../ChestModal/chestButton";
 import {DragonModal} from "../DragonModal";
 import OpenDragonModal from "../DragonModal/dragonButton";
-import KnightModal from "../KnightModal";
+import {KnightModal} from "../KnightModal";
 import OpenKnightModal from "../KnightModal/knightButton";
 import {ScrollModal} from "../ScrollModal";
 import OpenScrollModal from "../ScrollModal/scrollButton";
-import WizardModal from "../WizardModal";
-import OpenWizardModal from "../WizardModal/WizardButton";
+import {WizardModal} from "../WizardModal";
+import OpenWizardModal from "../WizardModal/wizardButton";
 import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
