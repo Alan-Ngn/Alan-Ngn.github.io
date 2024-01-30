@@ -1,7 +1,7 @@
 import React, { useRef, useState, useContext, ReactNode, FC } from 'react';
 import ReactDOM from 'react-dom';
 import './Modal.css';
-import { useTransform } from './transform';
+import { useTransform } from './transform.js';
 
 type ContextValue = {
   modalRef: React.RefObject<HTMLDivElement>; // reference to modal div
