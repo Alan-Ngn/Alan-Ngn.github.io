@@ -35,3 +35,49 @@
 .scroll-modal {
     height: 100%;
 }
+
+
+
+.profile-pic{
+    position: relative;
+    z-index:1;
+    height:263px;
+    width: 100%;
+    object-fit: cover;
+    display:flex;
+    justify-content: center;
+}
+
+.frame {
+    z-index:1;
+    position:absolute;
+    height:263px;
+   /* right: 300px; */
+    /* right: auto; */
+    /* object-fit: contain; */
+    /* overflow-clip-margin: content-box; */
+    /* overflow: clip; */
+
+}
+.profile {
+    z-index: 1;
+    position:absolute;
+    /* left: 137px; */
+    width:130px;
+    height:170px;
+    /* left:40px; */
+    top: 37px
+}
+/* @media only screen and (max-height: 900px) {
+    .profile {
+        width:80px;
+        height:105px;
+        top: 24px
+    }
+    .frame {
+        height:162px;
+    }
+    .profile-pic{
+        height:162px;
+    }
+  } */

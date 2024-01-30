@@ -6,8 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const modal_1 = require("../../context/modal");
 const transform_1 = require("../../context/transform");
-// import './OpenModalButton.css'
-function OpenKnightModal({ modalComponent, // component to render inside the modal
+function OpenDragonModal({ modalComponent, // component to render inside the modal
 buttonText, // text of the button that opens the modal
 onButtonClick, // optional: callback function that will be called once the button that opens the modal is clicked
 onModalClose, // optional: callback function that will be called once the modal is closed
@@ -16,21 +15,21 @@ buttonClassName }) {
     const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon } = (0, transform_1.useTransform)();
     const onClick = () => {
         const newTransform = {
-            x: 20,
-            y: 650,
+            x: -40,
+            y: 450,
         };
         setTransform(newTransform);
-        setKnight("hide");
+        setDragon("hide");
         if (onModalClose)
             setOnModalClose(onModalClose);
-        if (transform.x === 20 && transform.y === 650) {
+        if (transform.x === -40 && transform.y === 450) {
             setModalContent(modalComponent);
         }
         else {
             setStart("hide");
             setWizard("hide");
             setScroll("hide");
-            setDragon("hide");
+            setKnight("hide");
             setChest("hide");
             setTimeout(() => {
                 setModalContent(modalComponent);
@@ -40,7 +39,7 @@ buttonClassName }) {
             onButtonClick();
     };
     return (react_1.default.createElement("button", { className: `modal-button-${buttonClassName}`, onClick: onClick },
-        react_1.default.createElement("img", { className: 'knight', src: process.env.PUBLIC_URL + '/knight.png' }),
+        react_1.default.createElement("img", { className: 'dragon', src: process.env.PUBLIC_URL + '/dragon.png' }),
         react_1.default.createElement("div", { className: 'button-text' }, buttonText)));
 }
-exports.default = OpenKnightModal;
+exports.default = OpenDragonModal;
