@@ -6,7 +6,6 @@
 }
 .resume {
     width: 100%;
-    /* position: absolute; */
     display:block;
 
 }
@@ -16,15 +15,11 @@
 }
 
 .fa-solid, .fa-brands {
-    /* position: rel; */
-    /* display:none */
     color: black;
     font-size: 40px;
 
 }
 .fa-solid:hover, .fa-brands:hover {
-    /* position: rel; */
-    /* display:none */
     color: blueviolet;
     /* font-size: 40px; */
 
