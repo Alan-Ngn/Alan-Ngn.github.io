@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import { Modal, ModalProvider } from './context/modal';
-import TransformProvider from './context/transform.js';
+import TransformProvider from './context/transform';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

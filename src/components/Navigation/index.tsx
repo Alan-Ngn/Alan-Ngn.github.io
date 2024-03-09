@@ -7,6 +7,8 @@ import {KnightModal} from "../KnightModal";
 import OpenKnightModal from "../KnightModal/knightButton";
 import {ScrollModal} from "../ScrollModal";
 import OpenScrollModal from "../ScrollModal/scrollButton";
+import { SnowGlobeModal } from "../SnowGlobeModal";
+import OpenSnowGlobeModal from "../SnowGlobeModal/snowGlobeButton";
 import {WizardModal} from "../WizardModal";
 import OpenWizardModal from "../WizardModal/wizardButton";
 import "./navigation.css";
@@ -112,7 +114,12 @@ function Navigation(){
                   modalComponent={<ChestModal/>}
                 >
                 </OpenChestModal>
-
+                <OpenSnowGlobeModal
+                  buttonText='SnowGlobe Project'
+                  buttonClassName='snow'
+                  modalComponent={<SnowGlobeModal/>}
+                >
+                </OpenSnowGlobeModal>
                 <OpenDragonModal
                   buttonText='EarthBnB Project'
                   buttonClassName='dragon'
@@ -140,6 +147,7 @@ function Navigation(){
                   modalComponent={<ScrollModal/>}
                 >
                 </OpenScrollModal>
+
 
             </div>
 

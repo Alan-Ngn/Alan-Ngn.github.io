@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { useModal } from '../../context/modal';
-import { useTransform } from '../../context/transform.js';
+import { useTransform } from '../../context/transform';
 
 type OpenKnightModalProps = {
     modalComponent: ReactNode;
