@@ -153,7 +153,10 @@
   top:1025px;
   left:50px;
 }
-
+.globe-bubble{
+  top:815px;
+  left:-65px;
+}
 .talk-bubble {
   margin: 40px;
   display: inline-block;

@@ -19,7 +19,7 @@ function OpenChestModal({
   buttonClassName
 }: OpenChestModalProps) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart, setChest, setScroll, setDragon, setKnight, setWizard } = useTransform()
+  const { transform, setTransform, setStart, setChest, setScroll, setDragon, setKnight, setWizard,setGlobe } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -37,6 +37,7 @@ function OpenChestModal({
       setScroll("hide");
       setKnight("hide");
       setDragon("hide");
+      setGlobe("hide")
       setTimeout(()=> {
           setModalContent(modalComponent);
         },1000)

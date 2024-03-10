@@ -15,7 +15,7 @@ export const ScrollModal = () => {
             </div>
             <div className="about-me">
                 <p>
-                    My name is Alan Nguyen and I'm a software engineer with a Bachelor's degree in Mathematics and 4+ years of work experience in data analytics.
+                    My name is Alan Nguyen and I'm a software engineer with a Bachelor's degree in Mathematics and 5+ years of work experience in data analytics.
                 </p>
                 <p>
                     I've spent the past few years dissecting datasets, deriving insights, and building data-driven solutions that have provided valuable information to stakeholders. During this time, I discovered my passion for coding.

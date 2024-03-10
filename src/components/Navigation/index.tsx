@@ -56,7 +56,7 @@ function Navigation(){
                 <div className={scroll}>
                   <div className="talktext">
                     <p>
-                      Click on the Wizard to check out my latest project: Gibberish!
+                      Click on the Snowman to check out my latest project currently in development: SnowGlobe!
                     </p>
                   </div>
                 </div>
@@ -93,6 +93,14 @@ function Navigation(){
                     </p>
                   </div>
                 </div>
+                <div className={globe}>
+                  <div className="talktext">
+                    <p>
+                      Click on the Wizard to check out my slack inspired project: Gibberish!
+                    </p>
+                  </div>
+                </div>
+
 
 
                 <img className="me-avatar" src={process.env.PUBLIC_URL + '/me.png'}

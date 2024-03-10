@@ -17,7 +17,7 @@ function OpenWizardModal({
   buttonClassName
 }: OpenWizardModalProps) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon } = useTransform()
+  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon, setGlobe } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -35,6 +35,7 @@ function OpenWizardModal({
       setScroll("hide");
       setKnight("hide");
       setDragon("hide");
+      setGlobe("hide");
       setTimeout(()=> {
           setModalContent(modalComponent);
         },1200)

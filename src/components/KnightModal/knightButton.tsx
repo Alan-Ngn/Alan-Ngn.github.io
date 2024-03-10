@@ -18,7 +18,7 @@ function OpenKnightModal({
   buttonClassName
 }: OpenKnightModalProps) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon } = useTransform()
+  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon, setGlobe } = useTransform()
 
   const onClick = () => {
     const newTransform = {
@@ -36,6 +36,7 @@ function OpenKnightModal({
       setScroll("hide");
       setDragon("hide");
       setChest("hide");
+      setGlobe("hide")
       setTimeout(()=> {
           setModalContent(modalComponent);
         },1200)

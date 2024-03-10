@@ -18,7 +18,7 @@ type ModalProviderProp = {
 }
 
 export const ModalProvider: FC<ModalProviderProp> = ({ children }) => {
-  const {transform, setScroll, setWizard, setKnight, setDragon, setChest } = useTransform()
+  const {transform, setScroll, setWizard, setKnight, setDragon, setChest, setGlobe } = useTransform()
   const modalRef = useRef<HTMLDivElement>(null)
   const [modalContent, setModalContent] = useState<ReactNode | null>(null);
   // callback function that will be called when modal is closing
@@ -46,6 +46,10 @@ export const ModalProvider: FC<ModalProviderProp> = ({ children }) => {
 
     if (transform.x === 0 && transform.y === 360){
       setChest("chest-bubble talk-bubble tri-right left-in");
+    }
+
+    if (transform.x === 190 && transform.y === 910){
+      setGlobe("globe-bubble talk-bubble tri-left right-in");
     }
 
     if (typeof onModalClose === 'function') {
