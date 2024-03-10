@@ -27,18 +27,19 @@
 
 
 .snow {
-  width: 110px;
+  width: 120px;
   height:130px;
   position: absolute;
   top:50px;
   left: 20px;
   /* left:-15px; */
     /* z-index: 2; */
+  transform: scaleX(-1);
 }
 .modal-button-snow {
   position: absolute;
   top: 750px;
-  left: 230px;
+  left: 210px;
 }
 .wizard {
   width: 200px;

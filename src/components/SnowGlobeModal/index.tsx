@@ -11,19 +11,19 @@ export const SnowGlobeModal = () => {
                     <i className="fa-regular fa-rectangle-xmark"></i>
                 </button>
                 <div className="image-link">
-                    <img className='GibberishSplash' src={process.env.PUBLIC_URL + '/GibberishSplashPage.PNG'}/>
+                    <img className='GibberishSplash' src={process.env.PUBLIC_URL + '/underconstruction.png'}/>
                     <div className="link-github-icon">
-                        <a href="https://gibberish-z0ju.onrender.com" rel="noreferrer" target="_blank">
+                        {/* <a href="https://gibberish-z0ju.onrender.com" rel="noreferrer" target="_blank">
                             <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <a href="https://github.com/Alan-Ngn/Gibberish" rel="noreferrer" target="_blank">
+                        </a> */}
+                        <a href="https://github.com/Alan-Ngn/snowglobe-website" rel="noreferrer" target="_blank">
                             <i className="fa-brands fa-github" />
                         </a>
 				    </div>
                 </div>
 
-                <h3>Gibberish</h3>
-                <p>Gibberish is a Slack-inspired website that utilizes JavaScript, React, Redux, Python, Flask, SQLAlchemy, SocketIO, HTML, and CSS. It integrates real-time communication through sockets for all CRUD operations and optimizes rendering by building relationships with multiple tables and utilizing one reducer.</p>
+                <h3>SnowGlobe</h3>
+                <p>SnowGlobe is a project that informs user’s making plans for ski destinations by tracking snow accumulation YoY at ski resorts. It utilizes TypeScript, React, Redux, Python, Flask, SQLAlchemy, Apache Airflow, ChartJS, HTML, CSS, and SQLite. It is currently in development.</p>
                 {/* <div className="site-links">
                     <button className="project-button" onClick={openLiveLink}>
                         Live Link
@@ -35,9 +35,11 @@ export const SnowGlobeModal = () => {
                             <h3>Skills</h3>
                 <div className="skills-img">
 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original-wordmark.svg" />
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
 
@@ -49,11 +51,11 @@ export const SnowGlobeModal = () => {
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original-wordmark.svg" />
 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original-wordmark.svg" />
+
                 </div>
             </article>
     )
