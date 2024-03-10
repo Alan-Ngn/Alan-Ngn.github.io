@@ -47,6 +47,7 @@ function OpenSnowGlobeModal({
   return (
       <button className={`modal-button-${buttonClassName}`} onClick={onClick}>
         <img  className='snow' src={process.env.PUBLIC_URL + '/snowman.png'}/>
+        <img  className='cone' src={process.env.PUBLIC_URL + '/constructioncone.png'}/>
         <div className='button-text'>{buttonText}</div>
       </button>
 
