@@ -15,7 +15,7 @@ import "./navigation.css";
 import React, { useState } from 'react';
 function Navigation(){
     // const [transform, setTransform] = useState({ x: 20, y: 0})
-    const {transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest} = useTransform()
+    const {transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest, globe, setGlobe} = useTransform()
     // const [start, setStart] = useState("talk-bubble tri-right left-in")
 
     const handleStart = (e:any) => {
@@ -28,7 +28,8 @@ function Navigation(){
         setWizard("hide");
         setKnight("hide");
         setDragon("hide");
-        setChest("hide")
+        setChest("hide");
+        setGlobe("hide");
         setTimeout(()=> {
           setStart("start-bubble talk-bubble tri-right left-in")
         },1000)

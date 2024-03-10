@@ -27,18 +27,18 @@
 
 
 .snow {
-  width: 100px;
+  width: 110px;
   height:130px;
   position: absolute;
-  top:10px;
-  left: 200px;
+  top:50px;
+  left: 20px;
   /* left:-15px; */
     /* z-index: 2; */
 }
 .modal-button-snow {
   position: absolute;
-  top: 780px;
-  left: -340px;
+  top: 750px;
+  left: 230px;
 }
 .wizard {
   width: 200px;
@@ -115,7 +115,7 @@
   top: 770px;
   left:-10px;
 }
-.scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover {
+.scroll:hover, .chest:hover, .knight:hover, .dragon:hover, .wizard:hover, .snow:hover {
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@
 .button-text {
   text-align: center;
 }
-.modal-button-wizard:hover, .modal-button-knight:hover, .modal-button-dragon:hover, .modal-button-chest:hover, .modal-button-scroll:hover, .start:hover {
+.modal-button-wizard:hover, .modal-button-knight:hover, .modal-button-dragon:hover, .modal-button-chest:hover, .modal-button-scroll:hover, .start:hover, .modal-button-snow:hover {
   cursor: pointer;
 
 }

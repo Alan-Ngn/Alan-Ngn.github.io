@@ -17,17 +17,17 @@ function OpenSnowGlobeModal({
   buttonClassName
 }: OpenSnowGlobeModalProps) {
   const { setModalContent, setOnModalClose } = useModal();
-  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon } = useTransform()
+  const { transform, setTransform, setStart, setWizard, setKnight, setScroll, setChest, setDragon, setGlobe } = useTransform()
 
   const onClick = () => {
     const newTransform = {
-      x: -200,
-      y: 900,
+      x: 190,
+      y: 910,
     };
     setTransform(newTransform);
-    setWizard("hide")
+    setGlobe("hide")
     if (onModalClose) setOnModalClose(onModalClose);
-    if (transform.x === -200 && transform.y ===900){
+    if (transform.x === 190 && transform.y ===910){
         setModalContent(modalComponent);
     } else {
       setStart("hide");
@@ -35,6 +35,7 @@ function OpenSnowGlobeModal({
       setScroll("hide");
       setKnight("hide");
       setDragon("hide");
+      setWizard("hide")
       setTimeout(()=> {
           setModalContent(modalComponent);
         },1200)

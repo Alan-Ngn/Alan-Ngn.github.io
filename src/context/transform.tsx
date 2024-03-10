@@ -15,6 +15,8 @@ export type TransformContextType = {
     setDragon: React.Dispatch<React.SetStateAction<string>>;
     chest: string;
     setChest: React.Dispatch<React.SetStateAction<string>>;
+    globe: string;
+    setGlobe: React.Dispatch<React.SetStateAction<string>>;
 }
 export const TransformContext = createContext<TransformContextType | undefined>(undefined)
 
@@ -38,8 +40,9 @@ const TransformProvider: FC<TransformProviderProps> = ( { children } ) => {
     const [wizard, setWizard] = useState<string>("hide")
     const [dragon, setDragon] = useState<string>("hide")
     const [chest, setChest] = useState<string>("hide")
+    const [globe, setGlobe] = useState<string>("hide")
     return (
-        <TransformContext.Provider value={{transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest}}>
+        <TransformContext.Provider value={{transform, setTransform, start, setStart, scroll, setScroll, knight, setKnight, wizard, setWizard, dragon, setDragon, chest, setChest, globe, setGlobe}}>
             {children}
         </TransformContext.Provider>
 
