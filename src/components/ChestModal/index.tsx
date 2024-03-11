@@ -13,12 +13,12 @@ export const ChestModal = () => {
 			Let's connect, collaborate, and build amazing software together!
 			</p>
 			<div className="resume-download">
-				<img  className='resume' src={process.env.PUBLIC_URL + '/Resume.PNG'}/>
+				<img  className='resume' src={process.env.PUBLIC_URL + '/dataresume.PNG'}/>
 				<div className="download-icon">
-					<a href={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'} target="_blank">
+					<a href={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'} target="_blank">
 						<i className="fa-solid fa-arrow-up-right-from-square"></i>
 					</a>
-					<a className='resume-icon' href={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'} download={process.env.PUBLIC_URL + '/Alan Nguyen - Software Engineer Resume.pdf'}>
+					<a className='resume-icon' href={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'} download={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'}>
 						<i className="fa-solid fa-file-arrow-down"></i>
 					</a>
 				</div>

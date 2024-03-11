@@ -48,7 +48,7 @@ function Navigation(){
               <div className={start}>
                 <div className="talktext">
                   <p>
-                    Yoohooo! My name is Alan Nguyen and I am a Software Engineer! Click on the scroll and start the journey to learn more about me!
+                    Yoohooo! My name is Alan Nguyen and I am a developer! Click on the scroll and start the journey to learn more about me!
                   </p>
                 </div>
               </div>
