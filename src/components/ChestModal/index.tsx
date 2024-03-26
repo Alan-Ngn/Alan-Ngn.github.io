@@ -10,12 +10,12 @@ export const ChestModal = () => {
 				<i className="fa-regular fa-rectangle-xmark"></i>
 			</button>
 			<p>
-			Let's connect, collaborate, and build amazing software together!
+			Let's connect, collaborate, and build amazing things together!
 			</p>
 			<div className="resume-download">
 				<img  className='resume' src={process.env.PUBLIC_URL + '/dataresume.PNG'}/>
 				<div className="download-icon">
-					<a href={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'} target="_blank">
+					<a href={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'} rel="noreferrer" target="_blank">
 						<i className="fa-solid fa-arrow-up-right-from-square"></i>
 					</a>
 					<a className='resume-icon' href={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'} download={process.env.PUBLIC_URL + '/Alan Nguyen - Data Engineer Resume.pdf'}>
@@ -34,7 +34,7 @@ export const ChestModal = () => {
 				<a href="https://wellfound.com/u/alan-nguyen-31" rel="noreferrer" target="_blank">
 					<i className="fa-brands fa-angellist" />
 				</a>
-				<a href="mailto:alanngn21@gmail.com" target="_blank" >
+				<a href="mailto:alanngn21@gmail.com" rel="noreferrer" target="_blank" >
 					<i className="fa-solid fa-envelope"></i>
 				</a>
 			</div>
