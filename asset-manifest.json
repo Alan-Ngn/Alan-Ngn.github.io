@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.50344472.css",
-    "main.js": "/static/js/main.c6bc6efe.js",
+    "main.js": "/static/js/main.545c0b76.js",
     "static/media/minecraftia.ttf": "/static/media/minecraftia.69fd3db14fbc8b3f7cdb.ttf",
     "index.html": "/index.html",
     "main.50344472.css.map": "/static/css/main.50344472.css.map",
-    "main.c6bc6efe.js.map": "/static/js/main.c6bc6efe.js.map"
+    "main.545c0b76.js.map": "/static/js/main.545c0b76.js.map"
   },
   "entrypoints": [
     "static/css/main.50344472.css",
-    "static/js/main.c6bc6efe.js"
+    "static/js/main.545c0b76.js"
   ]
 }
