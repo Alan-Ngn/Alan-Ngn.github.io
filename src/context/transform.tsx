@@ -33,7 +33,7 @@ type TransformProviderProps = {
 }
 
 const TransformProvider: FC<TransformProviderProps> = ( { children } ) => {
-    const [transform, setTransform] = useState<Transform>({ x: 20, y: 1180})
+    const [transform, setTransform] = useState<Transform>({ x: 20, y: 1155})
     const [start, setStart] = useState<string>("start-bubble talk-bubble tri-right left-in")
     const [scroll, setScroll] = useState<string>("hide")
     const [knight, setKnight] = useState<string>("hide")

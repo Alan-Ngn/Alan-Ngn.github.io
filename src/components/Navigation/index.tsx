@@ -21,7 +21,7 @@ function Navigation(){
     const handleStart = (e:any) => {
         const newTransform = {
           x: 20,
-          y: 1180,
+          y: 1155,
         };
         setTransform(newTransform);
         setScroll('hide');
