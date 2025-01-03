@@ -27,14 +27,14 @@
 
 
 .snow {
-  width: 120px;
-  height:130px;
+  width: 200px;
+  height:160px;
   position: absolute;
-  top:50px;
-  left: 20px;
+  top:55px;
+  left: -40px;
   /* left:-15px; */
     /* z-index: 2; */
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 .cone {
   width: 60px;

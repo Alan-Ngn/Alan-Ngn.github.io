@@ -56,7 +56,7 @@ function Navigation(){
                 <div className={scroll}>
                   <div className="talktext">
                     <p>
-                      Click on the Snowman to check out my latest project currently in development: SnowGlobe!
+                      Click on the green pipe to check out my latest project currently in development: WeatherAPI Pipeline!
                     </p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ function Navigation(){
                 >
                 </OpenChestModal>
                 <OpenSnowGlobeModal
-                  buttonText='SnowGlobe Project'
+                  buttonText='WeatherAPI Pipeline'
                   buttonClassName='snow'
                   modalComponent={<SnowGlobeModal/>}
                 >
